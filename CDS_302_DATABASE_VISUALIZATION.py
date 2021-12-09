@@ -9,12 +9,7 @@ import streamlit as st
 import pandas as pd
 import sqlite3 as sql
 import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
-import numpy as np
-import json
-import geopandas as gpd
-import pyproj
 import plotly.graph_objs as go
 
 
