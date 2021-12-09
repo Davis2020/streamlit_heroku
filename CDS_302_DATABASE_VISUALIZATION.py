@@ -18,7 +18,7 @@ import plotly.graph_objs as go
 
 def app():
     
-    path = "https://github.com/Davis2020/streamlit_heroku/blob/master/Levels_FYI.db"
+    path = "Levels_FYI.db"
     conn = sql.connect(path)
     comp_query = "select company_name from company"
     cmp_df = pd.read_sql(comp_query, conn)
