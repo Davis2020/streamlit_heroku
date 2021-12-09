@@ -11,7 +11,7 @@ import streamlit as st
 import sqlite3 as sql
 
 def app():
-    conn = sql.connect('https://github.com/Davis2020/streamlit_heroku/blob/0c7e13fd5ba9a6fa73e36f46ff2662a5a377a595/Levels_FYI.db')
+    conn = sql.connect('Levels_FYI.db')
     comp_query = "select company_name from company"
     title_query = "select title from employee"
     title_df = pd.read_sql(title_query, conn)
