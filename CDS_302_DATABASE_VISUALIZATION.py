@@ -23,7 +23,7 @@ import plotly.graph_objs as go
 
 def app():
     
-    conn = sql.connect("/Users/davis/Documents/GMU/CDS-302/Levels_FYI.db")
+    conn = sql.connect("https://github.com/Davis2020/streamlit_heroku/blob/master/Levels_FYI.db")
     comp_query = "select company_name from company"
     cmp_df = pd.read_sql(comp_query, conn)
     comp_name = st.selectbox("Choose company",(cmp_df))
@@ -128,7 +128,6 @@ def app():
     # Add annotations in the center of the donut pies.
     annotations=[dict(text=comp_name+" work levels", x=0.50, y=0.5, font_size=20, showarrow=False)])
 
-    df1 = pd.read_csv("/Users/davis/Downloads/simplemaps_worldcities_basicv1.74/worldcities.csv")
 
     map_df = pd.read_sql_query(map_query, conn)
     
