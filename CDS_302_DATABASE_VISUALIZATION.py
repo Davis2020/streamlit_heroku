@@ -50,8 +50,8 @@ def app():
         try:
             df2 = ge.get_group((comp_name,i))
         except KeyError as e:
-            education_level.remove(i)
             b_mean = 0
+            es.append(0)
         else:
             b_mean = df2["base_salary"].mean()
             es.append(b_mean)
