@@ -48,7 +48,7 @@ def app():
     es = []
     for i in education_level:
         try:
-           global df2 = ge.get_group((comp_name,i))
+           df2 = ge.get_group((comp_name,i))
         except KeyError as e:
             b_mean = 0
             es.append(0)
