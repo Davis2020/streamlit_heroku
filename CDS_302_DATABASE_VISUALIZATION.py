@@ -53,6 +53,7 @@ def app():
             b_mean = 0
             es.append(0)
         else:
+            df2 = ge.get_group((comp_name,i))
             b_mean = df2["base_salary"].mean()
             es.append(b_mean)
         
@@ -66,6 +67,7 @@ def app():
             b1_mean = 0
             ps.append(0)
         else:
+            df3 = gp.get_group((comp_name,i))
             b1_mean = df3["base_salary"].mean()
             ps.append(b1_mean)
             
