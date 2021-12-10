@@ -149,7 +149,7 @@ def app():
     
     st.header("For bugs encounters please contact me!")
     contact_form = """
-    <form action="https://formsubmit.co/your@email.com" method="POST">
+    <form action="https://formsubmit.co/davis1kajuna@gmail.com" method="POST">
      <input type="text" name="name" required>
      <input type="email" name="email" required>
      <button type="submit">Send</button>
