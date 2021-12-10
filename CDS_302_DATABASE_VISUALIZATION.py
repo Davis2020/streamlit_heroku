@@ -146,5 +146,16 @@ def app():
     st.caption("if plot does not appear, company has levels with less than 30 employees")
     st.subheader("Map of different locations of " + comp_name)
     st.map(map_df)
+    
+    st.header("For bugs encounters please contact me!")
+    contact_form = """
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+    </form>
+    """
+    
+    st.markdown(contact_form, unsafe_allow_html=True)
 
     
