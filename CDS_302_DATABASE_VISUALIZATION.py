@@ -52,6 +52,8 @@ def app():
         except KeyError as e:
             b_mean = 0
             es.append(0)
+            if i == "PhD":
+                df = None
         else:
             b_mean = df2["base_salary"].mean()
             es.append(b_mean)
