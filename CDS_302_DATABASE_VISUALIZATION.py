@@ -52,6 +52,7 @@ def app():
         except KeyError as e:
             b_mean = 0
             es.append(0)
+            df2 = ge.get_group((comp_name,i))
         else:
             df2 = ge.get_group((comp_name,i))
             b_mean = df2["base_salary"].mean()
@@ -66,7 +67,6 @@ def app():
         except KeyError as e:
             b1_mean = 0
             ps.append(0)
-            df3 = gp.get_group((comp_name,i))
         else:
             df3 = gp.get_group((comp_name,i))
             b1_mean = df3["base_salary"].mean()
