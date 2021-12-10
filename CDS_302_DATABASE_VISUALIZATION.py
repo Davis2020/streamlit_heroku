@@ -41,6 +41,7 @@ def app():
    
     df = pd.read_sql_query(query, conn)
     st.header("Data Visualization")
+    st.caption("Bugs are fixed per encounter")
     education_level = ["Bachelor's Degree", "Master's Degree", "PhD"]
     
     
@@ -52,8 +53,6 @@ def app():
         except KeyError as e:
             b_mean = 0
             es.append(0)
-            if i == "PhD":
-                df = None
         else:
             b_mean = df2["base_salary"].mean()
             es.append(b_mean)
